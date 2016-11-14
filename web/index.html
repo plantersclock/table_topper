@@ -11,6 +11,10 @@
 
     <script>
         console.log("Hello world");
+
+        $.get("http://localhost:4567/api/game_schemas/Terra_Mystica", function (data) {
+            console.log(data);
+        });
     </script>
 
 </body>

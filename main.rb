@@ -30,4 +30,10 @@ get "/" do
   send_file "web/index.html"
 end
 
+get "/api/game_schemas" do
+  return "blah"
+end
 
+get "/api/game_schemas/:name" do
+  "Hello #{params['name']}!"
+end
