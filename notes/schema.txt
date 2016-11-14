@@ -1,0 +1,51 @@
+Game Schemas
+    Terra Mystica:
+        Player count, world map, round scoring, EOG scoring, factions
+
+Game
+    - player count
+    - round scoring
+    - EOG scoring
+    - world map
+
+Game Player
+    - score
+    - faction (extra)
+
+
+Users
+    - has account? is anonymous?
+
+
+---------------------------------------------------------
+
+Game Schemas
+    Concordia:
+        player count, world map
+
+Game
+    - player count
+
+Game Player
+    - score
+
+
+---------------------------------------------------------
+
+Game Schemas
+    Scythe:
+        player count, EOG Scoring, faction, faction board2
+
+
+Game
+    - player count
+
+Game Player
+    - score
+
+
+{
+    "name": "Matt",
+    "age": 26,
+    "asdfasd": [1, 2, 3]
+}
