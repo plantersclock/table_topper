@@ -1,8 +1,10 @@
 require "rubygems"
 require "sequel"
+require "sinatra"
 
 DB = Sequel.connect("postgres://postgres:mysecretpassword@172.17.0.2:5432/postgres")
 
+# Tables
 DB.create_table? :game_schemas do
   primary_key :id
   varchar :name
@@ -21,3 +23,11 @@ DB.create_table? :players do
   foreign_key :play_id, :plays
   json :player_data
 end
+
+set :public_folder, File.dirname(__FILE__) + '/web'
+
+get "/" do
+  send_file "web/index.html"
+end
+
+
